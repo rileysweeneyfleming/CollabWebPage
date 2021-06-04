@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<head>
+    <title>Kawartha Fruit Tree Map</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plants</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="css/templatemo-style.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="korey.css">    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+	<script type="text/javascript" src="Leaflet\leaflet.ajax.min.js"></script>
+	<script type="text/javascript" src="Leaflet\leaflet.ajax.js"></script> <!-- Needed -->
+	<!-- <link rel="stylesheet" href="stylePlay.css"> -->
+	<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script> -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
+	<!-- <script type="text/javascript" src="https://kf.kobotoolbox.org/api/v2/assets/ayYd637KWJhM2eSfAKcjFN/data/?format=geojson"></script> -->
+	<!-- <script type="text/javascript" src="Leaflet\ajax.js"></script> -->
+	<!-- <script type="text/javascript" src="march30_4.json"></script> -->
+	<!-- <script type="text/javascript" src="Kobo\march30_2.json"></script> -->
+	<script type="text/python" src="request.py"></script>
+	<link rel="stylesheet" type="text/css" href="navv/rainviewer.css">
+	<script type="text/javascript" src="navv/rain.js"></script>
+<!--
+    
+TemplateMo 556 Catalog-Z
+
+https://templatemo.com/tm-556-catalog-z
+
+-->
+</head>
+<body>
+    <!-- Page Loader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    </div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" target="_blank" href="https://nsodhi2908.github.io/collab/riley.htm">
+                
+                Kawartha Fruit Tree Map
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-4 active" aria-current="page" href="index.html">Main</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-1" href="plantlist.html">Plant List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-2" href="videos.html">Recipes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-3" href="about.html">Plant Information</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-4" href="contact.html">Harvest Info</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="mapid"></div>
+
+
+    <footer>
+        <center>
+            
+                <div>
+                    Copyright 2020 Catalog-Z Company. All rights reserved.
+                </div>
+                <div>
+                    Designed by <a href="https://templatemo.com" class="tm-text-gray" rel="sponsored" target="_parent">TemplateMo</a>
+                </div>
+            </div>
+        </center>
+    </footer>
+    <script type="text/javascript">
+        function PopUp(hideOrshow) {
+            if (hideOrshow == 'show') document.getElementById('ac-wrapper');
+            else document.getElementById('ac-wrapper').style.display = "none";
+        }
+        </script>
+    
+    <script>
+    
+        var mymap = L.map('mapid').setView([44.6, -78.5], 9);
+    
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+            maxZoom: 18,
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+                'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            id: 'mapbox/streets-v11',
+            tileSize: 512,
+            zoomOffset: -1
+        }).addTo(mymap);
+    
+        var geojsonLayer = new L.GeoJSON.AJAX("validation/result.geojson", {
+            onEachFeature: function (feature, layer) {
+                layer.bindPopup('<h1>'+feature.properties.Species+'</h1>');
+      }});
+        geojsonLayer.addTo(mymap);
+        var popup = L.popup();
+        function onMapClick(e) {
+            popup
+                .setLatLng(e.latlng)
+                .setContent("<h3>Would you like to add a tree?<h3>" + 
+                    "</br><a href=\"https://ee.kobotoolbox.org/single/fOVUuTza?returnUrl=https://nsodhi2908.github.io/collab/nav.htm\">Submission Form</a>")   //This here is just the onclick popup for anywhere on the map
+                .openOn(mymap);
+        }
+        mymap.on('click', onMapClick);
+        var rainviewer = L.control.rainviewer({
+                position: 'bottomleft',
+                nextButtonText: '>',
+                playStopButtonText: 'Start/Stop',
+                prevButtonText: '<',
+                positionSliderLabelText: "Time:",
+                opacitySliderLabelText: "Opacity:",
+                animationInterval: 500,
+                opacity: 0.3
+            });
+            rainviewer.addTo(mymap);
+    </script>
+    <script src="js/plugins.js"></script>
+    <script>
+        $(window).on("load", function() {
+            $('body').addClass('loaded');
+        });
+    </script>
+</body>
+</html>
