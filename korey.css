@@ -15,12 +15,13 @@ html, body {height:100%;}
 span{height:300px;
     overflow:auto;
 }
-#mapid {height: 83vh;
+.navbar, .navbar-expand-lg {height:10vh;}
+#mapid {height: 80vh;
     max-width: 100%;
     z-index:auto;
   }
 body{height:100%;}
-footer {
+footer {height:10vh;
 background-color:#dddddd;}
 footer:after{content:"";}
 
