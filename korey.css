@@ -1,3 +1,4 @@
+html, body {height:100%;}
 .column1 {float: left;
     width: 30%;
     margin-right:5%;
@@ -19,8 +20,9 @@ span{height:300px;
     z-index:auto;
   }
 body{height:100%;}
-footer {height:5%;
+footer {
 background-color:#dddddd;}
+footer:after{content:"";}
 
 #ac-wrapper {
     position: fixed;
