@@ -1,6 +1,6 @@
 L.Control.Rainviewer = L.Control.extend({
     options: {
-        position: 'bottomleft',
+        position: 'topleft',
         nextButtonText: '>',
         playStopButtonText: 'Play/Stop',
         prevButtonText: '<',
