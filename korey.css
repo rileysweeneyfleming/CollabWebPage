@@ -22,7 +22,9 @@ span{height:300px;
   }
 body{height:100%;}
 footer {height:10vh;
-background-color:#dddddd;}
+background-color:#EEEEEE;
+font: #aaaa;
+}
 footer:after{content:"";}
 
 #ac-wrapper {
@@ -51,3 +53,6 @@ footer:after{content:"";}
     overflow:auto;
     font-size:12pt;
   }
+/* center{background-color: #dddddd;
+  font: #aaaa;
+  } */
