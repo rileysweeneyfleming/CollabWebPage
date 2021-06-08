@@ -21,9 +21,7 @@ html, body {
     margin-left: 5%;
     flex:0 0 auto;
 } */
-span{height:300px;
-    /* overflow:auto; */
-}
+
 .navbar, .navbar-expand-lg {min-height:8%;
   max-height:8%;
   z-index:1000000;
