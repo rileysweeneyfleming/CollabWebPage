@@ -28,7 +28,7 @@ html, body {
   /* margin: 0.5em; */
 }
 #mapid {min-height:84%;
-  max-height:100%;
+  height:100%;
     width: 100%;
     z-index:auto;
   }
