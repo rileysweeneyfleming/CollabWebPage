@@ -9,7 +9,10 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/korey.css">    
-
+    <!--Bootstrap Navbar-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/korey.css">
 
 <!--
     
@@ -28,7 +31,8 @@ https://templatemo.com/tm-556-catalog-z
         <div class="loader-section section-right"></div>
 
     </div>
-    <nav class="navbar navbar-expand-lg">
+    <!-- OLD NAVBAR -->
+    <!-- <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" target="_blank" href="index.html">
                 
@@ -69,7 +73,35 @@ https://templatemo.com/tm-556-catalog-z
             </ul>
             </div>
         </div>
-    </nav>
+    </nav> -->
+        <!-- NEW NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                 <a class="navbar-brand" href="index.html">Kawartha Fruit Tree Map</a>
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+               </button>
+             <div class="collapse navbar-collapse" id="main_nav">
+           
+               <ul class="navbar-nav ms-auto">
+                   <li class="nav-item"><a class="nav-link" href="fruittreemap.html"> Map </a></li>
+                   <li class="nav-item"><a class="nav-link" href="Form.html">Data Collection</a></li>
+                   <li class="nav-item"><a class="nav-link" href="Guide.html"> User Guide </a></li>
+                   <li class="nav-item"><a class="nav-link" href="Dev.html">Development Process</a></li>
+                   <li class="nav-item dropdown">
+                       <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Plant Resources</a>
+                       <ul class="dropdown-menu dropdown-menu-right">
+                         <li><a class="dropdown-item" href="plantlist.html"> Plant List</a></li>
+                         <li><a class="dropdown-item active" href="videos.html"> Recipes</a></li>
+                         <li><a class="dropdown-item" href="about.html"> Plant Information</a></li>
+                         <li><a class="dropdown-item" href="contact.html"> Harvest Information</a></li>
+                       </ul>
+                   </li>
+               </ul>
+           
+             </div> <!-- navbar-collapse.// -->
+            </div> <!-- container-fluid.// -->
+           </nav>
     <div class="container-fluid tm-mt-60">
         <div class="row mb-4">
             <h2 class="col-12 tm-text-primary">

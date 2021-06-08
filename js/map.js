@@ -86,9 +86,11 @@ var comp = new L.Control.Compass({autoActive: true, showDigit:true});
 mymap.addControl(comp);
 // Compass widget script END
 
-//	window.addEventListener("resize", function() {
-//		"use strict"; window.location.reload(); 
-//	});
+
+// BOOTSTRAP NAVBAR
+	window.addEventListener("resize", function() {
+		"use strict"; window.location.reload(); 
+	});
 
 
 document.addEventListener("DOMContentLoaded", function(){
