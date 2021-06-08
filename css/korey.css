@@ -105,13 +105,13 @@ footer:after{content:"";}
 }
 
 .navbar-dark .navbar-nav .nav-link {color: #0d6efd;
-}	
-.navbar-dark::after{color: #0d6efd;}
-.navbar-nav::after{color: #0d6efd;}
-.nav-link::after{color: #0d6efd;}
-.dropdown-toggle:after{color:#0d6efd;}
-.dropdown-toggle::after{font:#0d6efd;}
-.dropdown-toggle{color: #0d6efd;}
-.nav-link, .nav-item, .dropdown-item{color: #0d6efd;}
+}
+/* .navbar-dark::after{color: #0d6efd;} */
+/* .navbar-nav::after{color: #0d6efd;} */
+.nav-link::after{color: #0d6efd;
+}
+/* .dropdown-toggle:after{color:#0d6efd;} */
+/* .dropdown-toggle{color: #0d6efd;} */
+/* .nav-link, .nav-item, .dropdown-item{color: #0d6efd;} */
 }
 /* ============ small devices .end// ============ */
