@@ -184,7 +184,7 @@ a:hover { color:#009999; }
 .navbar-toggler:focus { box-shadow: none; }
 .navbar-brand {
     color: #3399CC;
-    font-size: 1.6rem;
+    font-size: x-large;
 }
 
 .navbar-brand i { font-size: 2rem; }
