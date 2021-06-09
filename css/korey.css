@@ -71,7 +71,7 @@ footer:after{content:"";}
 
 
 .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
-  color:#0d6efd;
+  color:#b9cde9;
 }
 /* Bootstrap dropdown css */
 .nav-link {
@@ -152,3 +152,11 @@ footer:after{content:"";}
 /* .nav-link, .nav-item, .dropdown-item{color: #0d6efd;} */
 }
 /* ============ small devices .end// ============ */
+.box {
+  height:100vh;
+  position:absolute;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+}
