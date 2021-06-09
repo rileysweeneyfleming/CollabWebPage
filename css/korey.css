@@ -71,7 +71,7 @@ footer:after{content:"";}
 
 
 .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
-  color:#0d6efd;
+  color:#b9cde9;
 }
 /* Bootstrap dropdown css */
 .nav-link {
@@ -133,7 +133,7 @@ footer:after{content:"";}
 }
 /* .navbar-dark::after{color: #0d6efd;} */
 /* .navbar-nav::after{color: #0d6efd;} */
-.nav-link::after{color: #fafafa;
+.nav-link::after{color: #0d6efd;
 }
 .nav-item .dropdown{color:#0d6efd;
 }
