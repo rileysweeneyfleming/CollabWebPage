@@ -34,7 +34,10 @@
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.css" />
 	<script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.js" charset="utf-8"></script>
-
+    <!--Bootstrap Navbar-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/korey.css">
 
 <!--
     
@@ -75,7 +78,7 @@ https://templatemo.com/tm-556-catalog-z
                     <a class="nav-link nav-link-3" href="Form.html">Data Collection</a>
                 </li> 
                 <li class="nav-item">
-                    <a class="nav-link nav-link-4 active" aria-current="page" href="Guide.html">User Guide</a>
+                    <a class="nav-link nav-link-4" href="Guide.html">User Guide</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link nav-link-1" href="plantlist.html">Plant List</a>
@@ -90,44 +93,42 @@ https://templatemo.com/tm-556-catalog-z
                     <a class="nav-link nav-link-4" href="contact.html">Harvest Info</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-1" href="Dev.html">Development Process</a>
+                    <a class="nav-link nav-link-1 active" aria-current="page" href="Dev.html">Development Process</a>
                 </li> 
                 
             </ul>
             </div>
         </div>
     </nav> -->
-
-
-<!-- NEW NAVBAR -->
+    <!-- NEW NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Kawartha Fruit Tree Map</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="main_nav">
-    
-        <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="fruittreemap.html"> Map </a></li>
-            <li class="nav-item"><a class="nav-link" href="Form.html">Data Collection</a></li>
-            <li class="nav-item"><a class="nav-link active" href="Guide.html"> User Guide </a></li>
-            <li class="nav-item"><a class="nav-link" href="Dev.html">Development Process</a></li>
-            <li class="nav-item dropdown">
-                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Plant Resources</a>
-                <ul class="dropdown-menu dropdown-menu-right">
-                    <li><a class="dropdown-item" href="plantlist.html"> Plant List</a></li>
-                    <li><a class="dropdown-item" href="videos.html"> Recipes</a></li>
-                    <li><a class="dropdown-item" href="about.html"> Plant Information</a></li>
-                    <li><a class="dropdown-item" href="contact.html"> Harvest Information</a></li>
-                </ul>
-            </li>
-        </ul>
-    
-        </div> <!-- navbar-collapse.// -->
+             <a class="navbar-brand" href="index.html">Kawartha Fruit Tree Map</a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+         <div class="collapse navbar-collapse" id="main_nav">
+       
+           <ul class="navbar-nav ms-auto">
+               <li class="nav-item"><a class="nav-link" href="fruittreemap.html"> Map </a></li>
+               <li class="nav-item"><a class="nav-link" href="Form.html">Data Collection</a></li>
+               <li class="nav-item"><a class="nav-link active" href="Guide.html"> User Guide </a></li>
+               <li class="nav-item"><a class="nav-link" href="Dev.html">Development Process</a></li>
+               <li class="nav-item dropdown">
+                   <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Plant Resources</a>
+                   <ul class="dropdown-menu dropdown-menu-right">
+                     <li><a class="dropdown-item" href="plantlist.html"> Plant List</a></li>
+                     <li><a class="dropdown-item" href="videos.html"> Recipes</a></li>
+                     <li><a class="dropdown-item" href="about.html"> Plant Information</a></li>
+                     <li><a class="dropdown-item" href="contact.html"> Harvest Information</a></li>
+                   </ul>
+               </li>
+           </ul>
+       
+         </div> <!-- navbar-collapse.// -->
         </div> <!-- container-fluid.// -->
-    </nav>
-
+       </nav>
+<body>
     <div class="box">
         <iframe src="https://storymaps.arcgis.com/stories/ffc6d8bd99ea49bca4f6a487f5cbd2bf" width="100%" height="100%" frameborder="1" allowfullscreen allow="geolocation"></iframe>
 </div>
@@ -140,9 +141,9 @@ https://templatemo.com/tm-556-catalog-z
 <script src="js/plugins.js"></script>
 <script src="js/map.js"></script>
 <script>
-$(window).on("load", function() {
-    $('body').addClass('loaded');
-});
+    $(window).on("load", function() {
+        $('body').addClass('loaded');
+    });
 </script>
 </body>
 </html>
