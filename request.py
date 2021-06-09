@@ -23,9 +23,9 @@ badtrees = ["garbage", "Garbage", "Dumpster", "dumpster", "Buckthorn", "Buck Tho
 geoPoints = open(r"validation\kobo.geojson", "r")
 criteriaPoints = open(r"validation\polygon.geojson", "r")
 regionPoints = open(r"validation\polygonMinusWater.geojson", "r")
-geodict = json.loads(geoPoints)
-criteriadict = json.loads(criteriaPoints)
-regiondict = json.loads(regionPoints)
+geodict = json.load(geoPoints)
+criteriadict = json.load(criteriaPoints)
+regiondict = json.load(regionPoints)
 resultPoints = open(r"validation\result.geojson", "w")
 
 feature_collection = {"type": "FeatureCollection",
