@@ -14,6 +14,7 @@ headers = {
 response = requests.request('GET', url, headers=headers, data=payload)
 myfile = open(r"validation\kobo.geojson", "w")
 myfile.write(response.text)
+myfile.close()
 print("done")
 
 
@@ -22,9 +23,9 @@ badtrees = ["garbage", "Garbage", "Dumpster", "dumpster", "Buckthorn", "Buck Tho
 geoPoints = open(r"validation\kobo.geojson", "r")
 criteriaPoints = open(r"validation\polygon.geojson", "r")
 regionPoints = open(r"validation\polygonMinusWater.geojson", "r")
-geodict = json.load(geoPoints)
-criteriadict = json.load(criteriaPoints)
-regiondict = json.load(regionPoints)
+geodict = json.loads(geoPoints)
+criteriadict = json.loads(criteriaPoints)
+regiondict = json.loads(regionPoints)
 resultPoints = open(r"validation\result.geojson", "w")
 
 feature_collection = {"type": "FeatureCollection",
