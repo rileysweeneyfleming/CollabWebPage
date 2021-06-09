@@ -34,7 +34,10 @@
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.css" />
 	<script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.js" charset="utf-8"></script>
-
+    <!--Bootstrap Navbar-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/korey.css">
 
 <!--
     
@@ -53,8 +56,51 @@ https://templatemo.com/tm-556-catalog-z
         <div class="loader-section section-right"></div>
 
     </div>
+    <!-- OLD NAVBAR -->
+    <!-- <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" target="_blank" href="index.html">
+                
+                Kawartha Fruit Tree Map
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-1" href="index.html">Main</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-2" href="fruittreemap.html">Map</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-3" href="Form.html">Data Collection</a>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link nav-link-4" href="Guide.html">User Guide</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-1" href="plantlist.html">Plant List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-2" href="videos.html">Recipes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-3" href="about.html">Plant Information</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-4" href="contact.html">Harvest Info</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-1 active" aria-current="page" href="Dev.html">Development Process</a>
+                </li> 
+                
+            </ul>
+            </div>
+        </div>
+    </nav> -->
     <!-- NEW NAVBAR -->
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
              <a class="navbar-brand" href="index.html">Kawartha Fruit Tree Map</a>
@@ -82,57 +128,10 @@ https://templatemo.com/tm-556-catalog-z
          </div> <!-- navbar-collapse.// -->
         </div> <!-- container-fluid.// -->
        </nav>
-
-
-    <!-- OLD NAVBAR -->
-    <!-- <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" target="_blank" href="index.html">
-                
-                Kawartha Fruit Tree Map
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link nav-link-1" href="index.html">Main</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link-2" href="fruittreemap.html">Map</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link-3 active" aria-current="page" href="Form.html">Data Collection</a>
-                </li> 
-                <li class="nav-item">
-                    <a class="nav-link nav-link-4" href="Guide.html">User Guide</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link-1" href="plantlist.html">Plant List</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link-2" href="videos.html">Recipes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link-3" href="about.html">Plant Information</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link-4" href="contact.html">Harvest Info</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link-1" href="Dev.html">Development Process</a>
-                </li> 
-                
-            </ul>
-            </div>
-        </div>
-    </nav> -->
-
-
+<body>
     <div class="box">
-    <iframe src="https://ee.humanitarianresponse.info/m7ft93Qv" allow="geolocation" width="100%" height="100%"></iframe>
-    </div>
+        <iframe src="https://ee.humanitarianresponse.info/m7ft93Qv" width="100%" height="100%" frameborder="1" allowfullscreen allow="geolocation"></iframe>
+</div>
     <footer>
         <p style="height: 15; font-size: xx-small;">
             Copyright 2020 Catalog-Z Company. All rights reserved.<br>
@@ -142,9 +141,9 @@ https://templatemo.com/tm-556-catalog-z
 <script src="js/plugins.js"></script>
 <script src="js/map.js"></script>
 <script>
-$(window).on("load", function() {
-    $('body').addClass('loaded');
-});
+    $(window).on("load", function() {
+        $('body').addClass('loaded');
+    });
 </script>
 </body>
 </html>
