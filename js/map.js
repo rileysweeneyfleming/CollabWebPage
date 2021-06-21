@@ -22,8 +22,9 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     //if (feature.properties.Species == "Walnut, Black") return true
 //};
 var Conifers = L.layerGroup([geojsonLayer]);
+
 var geojsonLayer = new L.GeoJSON.AJAX("validation/result.geojson", {
-    filter: filterConifers,
+    
     onEachFeature: function (feature, layer) {
         layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
