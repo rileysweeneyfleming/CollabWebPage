@@ -159,170 +159,170 @@ var geojsonLayer43 = new L.GeoJSON.AJAX("validation/result.geojson", {
 }});
 geojsonLayer43.addTo(trees);
 
-// var geojsonLayer3 = new L.GeoJSON.AJAX("validation/result.geojson", {
-//     filter: function(feature) { return feature.properties.Species == "Apple, Common"},
-//     onEachFeature: function (feature, layer) {
-//         layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
-//         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
-//         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
-//         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
-//         '<a target="_blank" href=\"plantlist.html' + '"> HERE</a>' + ' for plant info, recipes and harvesting info');
+var geojsonLayer3 = new L.GeoJSON.AJAX("validation/result.geojson", {
+    filter: function(feature) { return feature.properties.Species == "Apple, Common"},
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        '<br> Comments: ' + feature.properties.Comments + '<br>' + 
+        '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
+        feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
+        '<a target="_blank" href=\"plantlist.html' + '"> HERE</a>' + ' for plant info, recipes and harvesting info');
        
         
  				
-// 	//Add points and pop-ups to map			
-// }});
-// geojsonLayer3.addTo(trees);
+	//Add points and pop-ups to map			
+}});
+geojsonLayer3.addTo(trees);
 
-// var geojsonLayer4 = new L.GeoJSON.AJAX("validation/result.geojson", {
-//     filter: function(feature) { return feature.properties.Species == "Cherry, Black"},
-//     onEachFeature: function (feature, layer) {
-//         layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
-//         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
-//         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
-//         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
-//         '<a target="_blank" href=\"plantlist.html' + '"> HERE</a>' + ' for plant info, recipes and harvesting info');
+var geojsonLayer4 = new L.GeoJSON.AJAX("validation/result.geojson", {
+    filter: function(feature) { return feature.properties.Species == "Cherry, Black"},
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        '<br> Comments: ' + feature.properties.Comments + '<br>' + 
+        '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
+        feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
+        '<a target="_blank" href=\"plantlist.html' + '"> HERE</a>' + ' for plant info, recipes and harvesting info');
        
         
  				
-// 	//Add points and pop-ups to map			
-// }});
-// geojsonLayer4.addTo(trees);
+	//Add points and pop-ups to map			
+}});
+geojsonLayer4.addTo(trees);
 
-// var geojsonLayer5 = new L.GeoJSON.AJAX("validation/result.geojson", {
-//     filter: function(feature) { return feature.properties.Species == "Walnut, English"},
-//     onEachFeature: function (feature, layer) {
-//         layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
-//         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
-//         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
-//         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
-//         '<a target="_blank" href=\"plantlist.html' + '"> HERE</a>' + ' for plant info, recipes and harvesting info');
+var geojsonLayer5 = new L.GeoJSON.AJAX("validation/result.geojson", {
+    filter: function(feature) { return feature.properties.Species == "Walnut, English"},
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        '<br> Comments: ' + feature.properties.Comments + '<br>' + 
+        '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
+        feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
+        '<a target="_blank" href=\"plantlist.html' + '"> HERE</a>' + ' for plant info, recipes and harvesting info');
        
         
  				
-// 	//Add points and pop-ups to map			
-// }});
-// geojsonLayer5.addTo(trees);
+	//Add points and pop-ups to map			
+}});
+geojsonLayer5.addTo(trees);
 
-// var geojsonLayer6 = new L.GeoJSON.AJAX("validation/result.geojson", {
-//     filter: function(feature) { return feature.properties.Species == "Walnut, Black"},
-//     onEachFeature: function (feature, layer) {
-//         layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
-//         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
-//         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
-//         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
-//         '<a target="_blank" href=\"plantlist.html' + '"> HERE</a>' + ' for plant info, recipes and harvesting info');
+var geojsonLayer6 = new L.GeoJSON.AJAX("validation/result.geojson", {
+    filter: function(feature) { return feature.properties.Species == "Walnut, Black"},
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        '<br> Comments: ' + feature.properties.Comments + '<br>' + 
+        '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
+        feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
+        '<a target="_blank" href=\"plantlist.html' + '"> HERE</a>' + ' for plant info, recipes and harvesting info');
        
         
  				
-// 	//Add points and pop-ups to map			
-// }});
-// geojsonLayer6.addTo(trees);
+	//Add points and pop-ups to map			
+}});
+geojsonLayer6.addTo(trees);
 
-// var geojsonLayer7 = new L.GeoJSON.AJAX("validation/result.geojson", {
-//     filter: function(feature) { return feature.properties.Species == "Pear, European"},
-//     onEachFeature: function (feature, layer) {
-//         layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
-//         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
-//         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
-//         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
-//         '<a target="_blank" href=\"plantlist.html' + '"> HERE</a>' + ' for plant info, recipes and harvesting info');
+var geojsonLayer7 = new L.GeoJSON.AJAX("validation/result.geojson", {
+    filter: function(feature) { return feature.properties.Species == "Pear, European"},
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        '<br> Comments: ' + feature.properties.Comments + '<br>' + 
+        '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
+        feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
+        '<a target="_blank" href=\"plantlist.html' + '"> HERE</a>' + ' for plant info, recipes and harvesting info');
        
         
  				
-// 	//Add points and pop-ups to map			
-// }});
-// geojsonLayer7.addTo(trees);
+	//Add points and pop-ups to map			
+}});
+geojsonLayer7.addTo(trees);
 
-// var geojsonLayer8 = new L.GeoJSON.AJAX("validation/result.geojson", {
-//     filter: function(feature) { return feature.properties.Species == "Maple, Sugar"},
-//     onEachFeature: function (feature, layer) {
-//         layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
-//         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
-//         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
-//         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
-//         '<a target="_blank" href=\"plantlist.html' + '"> HERE</a>' + ' for plant info, recipes and harvesting info');
+var geojsonLayer8 = new L.GeoJSON.AJAX("validation/result.geojson", {
+    filter: function(feature) { return feature.properties.Species == "Maple, Sugar"},
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        '<br> Comments: ' + feature.properties.Comments + '<br>' + 
+        '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
+        feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
+        '<a target="_blank" href=\"plantlist.html' + '"> HERE</a>' + ' for plant info, recipes and harvesting info');
        
         
  				
-// 	//Add points and pop-ups to map			
-// }});
-// geojsonLayer8.addTo(trees);
+	//Add points and pop-ups to map			
+}});
+geojsonLayer8.addTo(trees);
 
-// var geojsonLayer9 = new L.GeoJSON.AJAX("validation/result.geojson", {
-//     filter: function(feature) { return feature.properties.Species == "Maple, Black"},
-//     onEachFeature: function (feature, layer) {
-//         layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
-//         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
-//         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
-//         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
-//         '<a target="_blank" href=\"plantlist.html' + '"> HERE</a>' + ' for plant info, recipes and harvesting info');
+var geojsonLayer9 = new L.GeoJSON.AJAX("validation/result.geojson", {
+    filter: function(feature) { return feature.properties.Species == "Maple, Black"},
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        '<br> Comments: ' + feature.properties.Comments + '<br>' + 
+        '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
+        feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
+        '<a target="_blank" href=\"plantlist.html' + '"> HERE</a>' + ' for plant info, recipes and harvesting info');
        
         
  				
-// 	//Add points and pop-ups to map			
-// }});
-// geojsonLayer9.addTo(trees);
+	//Add points and pop-ups to map			
+}});
+geojsonLayer9.addTo(trees);
 
-// var geojsonLayer10 = new L.GeoJSON.AJAX("validation/result.geojson", {
-//     filter: function(feature) { return feature.properties.Species == "Cherry, Pin"},
-//     onEachFeature: function (feature, layer) {
-//         layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
-//         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
-//         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
-//         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
-//         '<a target="_blank" href=\"plantlist.html' + '"> HERE</a>' + ' for plant info, recipes and harvesting info');
+var geojsonLayer10 = new L.GeoJSON.AJAX("validation/result.geojson", {
+    filter: function(feature) { return feature.properties.Species == "Cherry, Pin"},
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        '<br> Comments: ' + feature.properties.Comments + '<br>' + 
+        '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
+        feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
+        '<a target="_blank" href=\"plantlist.html' + '"> HERE</a>' + ' for plant info, recipes and harvesting info');
        
         
  				
-// 	//Add points and pop-ups to map			
-// }});
-// geojsonLayer10.addTo(trees);
+	//Add points and pop-ups to map			
+}});
+geojsonLayer10.addTo(trees);
 
-// var geojsonLayer11 = new L.GeoJSON.AJAX("validation/result.geojson", {
-//     filter: function(feature) { return feature.properties.Species == "Chestnut, American"},
-//     onEachFeature: function (feature, layer) {
-//         layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
-//         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
-//         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
-//         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
-//         '<a target="_blank" href=\"plantlist.html' + '"> HERE</a>' + ' for plant info, recipes and harvesting info');
+var geojsonLayer11 = new L.GeoJSON.AJAX("validation/result.geojson", {
+    filter: function(feature) { return feature.properties.Species == "Chestnut, American"},
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        '<br> Comments: ' + feature.properties.Comments + '<br>' + 
+        '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
+        feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
+        '<a target="_blank" href=\"plantlist.html' + '"> HERE</a>' + ' for plant info, recipes and harvesting info');
        
         
  				
-// 	//Add points and pop-ups to map			
-// }});
-// geojsonLayer11.addTo(trees);
+	//Add points and pop-ups to map			
+}});
+geojsonLayer11.addTo(trees);
 
-// var geojsonLayer12 = new L.GeoJSON.AJAX("validation/result.geojson", {
-//     filter: function(feature) { return feature.properties.Species == "Chokecherry"},
-//     onEachFeature: function (feature, layer) {
-//         layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
-//         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
-//         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
-//         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
-//         '<a target="_blank" href=\"plantlist.html' + '"> HERE</a>' + ' for plant info, recipes and harvesting info');
+var geojsonLayer12 = new L.GeoJSON.AJAX("validation/result.geojson", {
+    filter: function(feature) { return feature.properties.Species == "Chokecherry"},
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        '<br> Comments: ' + feature.properties.Comments + '<br>' + 
+        '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
+        feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
+        '<a target="_blank" href=\"plantlist.html' + '"> HERE</a>' + ' for plant info, recipes and harvesting info');
        
         
  				
-// 	//Add points and pop-ups to map			
-// }});
-// geojsonLayer12.addTo(trees);
+	//Add points and pop-ups to map			
+}});
+geojsonLayer12.addTo(trees);
 
-// var geojsonLayer13 = new L.GeoJSON.AJAX("validation/result.geojson", {
-//     filter: function(feature) { return feature.properties.Species == "Plum, American"},
-//     onEachFeature: function (feature, layer) {
-//         layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
-//         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
-//         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
-//         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
-//         '<a target="_blank" href=\"plantlist.html' + '"> HERE</a>' + ' for plant info, recipes and harvesting info');
+var geojsonLayer13 = new L.GeoJSON.AJAX("validation/result.geojson", {
+    filter: function(feature) { return feature.properties.Species == "Plum, American"},
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        '<br> Comments: ' + feature.properties.Comments + '<br>' + 
+        '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
+        feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
+        '<a target="_blank" href=\"plantlist.html' + '"> HERE</a>' + ' for plant info, recipes and harvesting info');
        
         
  				
-// 	//Add points and pop-ups to map			
-// }});
-// geojsonLayer13.addTo(trees);
+	//Add points and pop-ups to map			
+}});
+geojsonLayer13.addTo(trees);
 
 // Shrubs
 
