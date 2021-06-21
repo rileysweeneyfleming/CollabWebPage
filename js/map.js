@@ -1,30 +1,38 @@
+var walnut = L.layerGroup();
+
 function PopUp(hideOrshow) {
     if (hideOrshow == 'show') document.getElementById('ac-wrapper');
     else document.getElementById('ac-wrapper').style.display = "none";
 }
-var mymap = L.map('mapid').setView([44.6, -78.5], 8);
+var mymap = L.map('mapid', {
+    center: [44.6, -78.5],
+    zoom: 8,
+    layers: [walnut]   
+});
     
-L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+var basemap = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
     maxZoom: 18,
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
         'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     id: 'mapbox/streets-v11',
     tileSize: 512,
     zoomOffset: -1
-    //layers: [Conifers]
-}).addTo(mymap);
+})
+basemap.addTo(mymap);
+
+
 
 // var geojsonLayer = new L.GeoJSON.AJAX("validation/result.geojson", {
 //     onEachFeature: function (feature, layer) {
 //         layer.bindPopup('<h1>'+feature.properties.Species+'</h1>');
 // }});
-//function filterConifers (feature){
-    //if (feature.properties.Species == "Walnut, Black") return true
-//};
+function walnut (feature){
+    if (feature.properties.Species == "Walnut, Black") return true
+};
 //var Conifers = L.layerGroup([geojsonLayer]);
 
 var geojsonLayer = new L.GeoJSON.AJAX("validation/result.geojson", {
-    
+    filter: walnut,
     onEachFeature: function (feature, layer) {
         layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
@@ -34,9 +42,18 @@ var geojsonLayer = new L.GeoJSON.AJAX("validation/result.geojson", {
  				
 	//Add points and pop-ups to map			
 }});
-geojsonLayer.addTo(mymap);
+geojsonLayer.addTo(walnut);
 //Attempting GEOJSON filter:
+var baseLayers = {
+    "basemap": basemap
 
+};
+
+var overlays = {
+    "Walnut": walnut
+};
+
+L.control.layers(baseLayers, overlays).addTo(mymap);
 // var overlayMaps = {
 //     "Conifers": Conifers
 // };
