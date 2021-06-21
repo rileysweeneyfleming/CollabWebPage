@@ -34,7 +34,7 @@ var geojsonLayer = new L.GeoJSON.AJAX("validation/result.geojson", {
  				
 	//Add points and pop-ups to map			
 }});
-geojsonLayer.addTo(mymap);
+geojsonLayer.addTo(Conifers);
 //Attempting GEOJSON filter:
 
 var overlayMaps = {
