@@ -82,20 +82,20 @@ var geojsonLayer14 = new L.GeoJSON.AJAX("validation/result.geojson", {
 }});
 geojsonLayer14.addTo(conifer);
 
-// var geojsonLayer15 = new L.GeoJSON.AJAX("validation/result.geojson", {
-//     filter: function(feature) { return feature.properties.Species == "Fir, Balsam"},
-//     onEachFeature: function (feature, layer) {
-//         layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
-//         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
-//         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
-//         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
-//         '<a target="_blank" href=\"plantlist.html' + '"> HERE</a>' + ' for plant info, recipes and harvesting info');
+var geojsonLayer15 = new L.GeoJSON.AJAX("validation/result.geojson", {
+    filter: function(feature) { return feature.properties.Species == "Fir, Balsam"},
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        '<br> Comments: ' + feature.properties.Comments + '<br>' + 
+        '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
+        feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
+        '<a target="_blank" href=\"plantlist.html' + '"> HERE</a>' + ' for plant info, recipes and harvesting info');
        
         
  				
-// 	//Add points and pop-ups to map			
-// }});
-// geojsonLayer15.addTo(conifer);
+	//Add points and pop-ups to map			
+}});
+geojsonLayer15.addTo(conifer);
 
 var geojsonLayer16 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Pine, Eastern White"},
@@ -112,20 +112,20 @@ var geojsonLayer16 = new L.GeoJSON.AJAX("validation/result.geojson", {
 }});
 geojsonLayer16.addTo(conifer);
 
-// var geojsonLayer17 = new L.GeoJSON.AJAX("validation/result.geojson", {
-//     filter: function(feature) { return feature.properties.Species == "Hemlock, Eastern"},
-//     onEachFeature: function (feature, layer) {
-//         layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
-//         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
-//         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
-//         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
-//         '<a target="_blank" href=\"plantlist.html' + '"> HERE</a>' + ' for plant info, recipes and harvesting info');
+var geojsonLayer17 = new L.GeoJSON.AJAX("validation/result.geojson", {
+    filter: function(feature) { return feature.properties.Species == "Hemlock, Eastern"},
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        '<br> Comments: ' + feature.properties.Comments + '<br>' + 
+        '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
+        feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
+        '<a target="_blank" href=\"plantlist.html' + '"> HERE</a>' + ' for plant info, recipes and harvesting info');
        
         
  				
-// 	//Add points and pop-ups to map			
-// }});
-// geojsonLayer17.addTo(conifer);
+	//Add points and pop-ups to map			
+}});
+geojsonLayer17.addTo(conifer);
 
 //DECIDUOUS TREES
 
