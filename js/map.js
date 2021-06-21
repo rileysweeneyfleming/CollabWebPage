@@ -39,7 +39,7 @@ var overlayMaps = {
     "Conifers": geojsonlayer
 };
 
-L.control.layers(overlayMaps).addTo(map);
+L.control.layers(overlayMaps).addTo(mymap);
 
 
 //END FILTER
