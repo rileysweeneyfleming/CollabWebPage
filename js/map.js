@@ -40,7 +40,7 @@ basemap.addTo(mymap);
 var geojsonLayer = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Spruce, Blue"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -55,7 +55,7 @@ geojsonLayer.addTo(conifer);
 var geojsonLayer2 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Spruce, White"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -70,7 +70,7 @@ geojsonLayer2.addTo(conifer);
 var geojsonLayer14 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Spruce, Norway"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -85,7 +85,7 @@ geojsonLayer14.addTo(conifer);
 var geojsonLayer15 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Fir, Balsam"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species +
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -100,7 +100,7 @@ geojsonLayer15.addTo(conifer);
 var geojsonLayer16 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Pine, Eastern White"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species +
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -115,7 +115,7 @@ geojsonLayer16.addTo(conifer);
 var geojsonLayer17 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Hemlock, Eastern"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species +
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -132,7 +132,7 @@ geojsonLayer17.addTo(conifer);
 var geojsonLayer42 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Mulberry"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -147,7 +147,7 @@ geojsonLayer42.addTo(trees);
 var geojsonLayer43 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Crabapple"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -162,7 +162,7 @@ geojsonLayer43.addTo(trees);
 var geojsonLayer3 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Apple, Common"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species +
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -177,7 +177,7 @@ geojsonLayer3.addTo(trees);
 var geojsonLayer4 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Cherry, Black"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -192,7 +192,7 @@ geojsonLayer4.addTo(trees);
 var geojsonLayer5 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Walnut, English"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -207,7 +207,7 @@ geojsonLayer5.addTo(trees);
 var geojsonLayer6 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Walnut, Black"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -222,7 +222,7 @@ geojsonLayer6.addTo(trees);
 var geojsonLayer7 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Pear, European"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -237,7 +237,7 @@ geojsonLayer7.addTo(trees);
 var geojsonLayer8 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Maple, Sugar"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -252,7 +252,7 @@ geojsonLayer8.addTo(trees);
 var geojsonLayer9 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Maple, Black"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -267,7 +267,7 @@ geojsonLayer9.addTo(trees);
 var geojsonLayer10 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Cherry, Pin"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -282,7 +282,7 @@ geojsonLayer10.addTo(trees);
 var geojsonLayer11 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Chestnut, American"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -297,7 +297,7 @@ geojsonLayer11.addTo(trees);
 var geojsonLayer12 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Chokecherry"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -312,7 +312,7 @@ geojsonLayer12.addTo(trees);
 var geojsonLayer13 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Plum, American"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -329,7 +329,7 @@ geojsonLayer13.addTo(trees);
 var geojsonLayer18 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Baked-Apple Berry"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -344,7 +344,7 @@ geojsonLayer18.addTo(shrubs);
 var geojsonLayer19 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Blueberry, Velvetleaf"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -359,7 +359,7 @@ geojsonLayer19.addTo(shrubs);
 var geojsonLayer20 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Bunchberry"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -374,7 +374,7 @@ geojsonLayer20.addTo(shrubs);
 var geojsonLayer21 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Wintergreen"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -389,7 +389,7 @@ geojsonLayer21.addTo(shrubs);
 var geojsonLayer22 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Sweetfern"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -404,7 +404,7 @@ geojsonLayer22.addTo(shrubs);
 var geojsonLayer23 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Sweet Gale"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -419,7 +419,7 @@ geojsonLayer23.addTo(shrubs);
 var geojsonLayer24 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Snowberry, Creeping"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -434,7 +434,7 @@ geojsonLayer24.addTo(shrubs);
 var geojsonLayer25 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Raspberry, Wild Red"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -449,7 +449,7 @@ geojsonLayer25.addTo(shrubs);
 var geojsonLayer26 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Raspberry, Black"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -464,7 +464,7 @@ geojsonLayer26.addTo(shrubs);
 var geojsonLayer27 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Raisin, Wild"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -479,7 +479,7 @@ geojsonLayer27.addTo(shrubs);
 var geojsonLayer28 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Partridgeberry"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -494,7 +494,7 @@ geojsonLayer28.addTo(shrubs);
 var geojsonLayer29 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Nannyberry"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -509,7 +509,7 @@ geojsonLayer29.addTo(shrubs);
 var geojsonLayer30 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Juneberry, Mountain"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -524,7 +524,7 @@ geojsonLayer30.addTo(shrubs);
 var geojsonLayer31 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Highbush Cranberry"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -539,7 +539,7 @@ geojsonLayer31.addTo(shrubs);
 var geojsonLayer32 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Gooseberry, Wild"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -554,7 +554,7 @@ geojsonLayer32.addTo(shrubs);
 var geojsonLayer33 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Cranberry, Large"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -569,7 +569,7 @@ geojsonLayer33.addTo(shrubs);
 var geojsonLayer34 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Cranberry, Small"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -584,7 +584,7 @@ geojsonLayer34.addTo(shrubs);
 var geojsonLayer35 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Elderberry, Common"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -599,7 +599,7 @@ geojsonLayer35.addTo(shrubs);
 var geojsonLayer36 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Goosberry, Bristly Wild"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -614,7 +614,7 @@ geojsonLayer36.addTo(shrubs);
 var geojsonLayer37 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Gooseberry, Prickly"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -629,7 +629,7 @@ geojsonLayer37.addTo(shrubs);
 var geojsonLayer38 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Serviceberry, Smooth"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -644,7 +644,7 @@ geojsonLayer38.addTo(shrubs);
 var geojsonLayer39 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Serviceberry, Low"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -659,7 +659,7 @@ geojsonLayer39.addTo(shrubs);
 var geojsonLayer40 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Serviceberry, Swamp"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -674,7 +674,7 @@ geojsonLayer40.addTo(shrubs);
 var geojsonLayer41 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Serviceberry, Downy"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -691,7 +691,7 @@ geojsonLayer41.addTo(shrubs);
 var geojsonLayer44 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.Species == "Cattails"},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species : ' + feature.properties.OtherTreeName +
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
@@ -706,7 +706,7 @@ geojsonLayer44.addTo(other);
 var geojsonLayer45 = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: function(feature) { return feature.properties.OtherTreeName === undefined},
     onEachFeature: function (feature, layer) {
-        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
