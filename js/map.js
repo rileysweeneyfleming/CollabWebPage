@@ -53,7 +53,7 @@ var overlays = {
     "Walnut": walnut
 };
 
-L.control.layers(baseLayers, overlays).addTo(map);
+L.control.layers(baseLayers, overlays).addTo(mymap);
 // var overlayMaps = {
 //     "Conifers": Conifers
 // };
