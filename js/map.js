@@ -37,7 +37,7 @@ basemap.addTo(mymap);
 //var Conifers = L.layerGroup([geojsonLayer]);
 
 var geojsonLayer = new L.GeoJSON.AJAX("validation/result.geojson", {
-    filter: function(feature) { return (feature.properties.Species == "Spruce, Blue", feature.properties.Species == "Spruce, White" },
+    filter: function(feature) { return (feature.properties.Species == "Spruce, Blue" && feature.properties.Species == "Spruce, White" },
     onEachFeature: function (feature, layer) {
         layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
