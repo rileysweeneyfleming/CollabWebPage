@@ -18,7 +18,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 //         layer.bindPopup('<h1>'+feature.properties.Species+'</h1>');
 // }});
 
-var geojsonLayer = new L.GeoJSON.AJAX("validation/result.geojson", {
+//var geojsonLayer = new L.GeoJSON.AJAX("validation/result.geojson", {
     onEachFeature: function (feature, layer) {
         layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
@@ -27,8 +27,8 @@ var geojsonLayer = new L.GeoJSON.AJAX("validation/result.geojson", {
         '<a target="_blank" href=\"plantlist.html' + '"> HERE</a>' + ' for plant info, recipes and harvesting info'); 
 // 				
 	//Add points and pop-ups to map			
-}});
-geojsonLayer.addTo(mymap);
+//}});
+//geojsonLayer.addTo(mymap);
 //Attempting GEOJSON filter:
 
 
