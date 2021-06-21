@@ -1,7 +1,7 @@
 var conifer = L.layerGroup();
-var trees = L.layergroup();
-var shrubs = L.layergroup();
-var other = L.layergroup();
+var trees = L.layerGroup();
+var shrubs = L.layerGroup();
+var other = L.layerGroup();
 
 function PopUp(hideOrshow) {
     if (hideOrshow == 'show') document.getElementById('ac-wrapper');
