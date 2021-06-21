@@ -31,17 +31,16 @@ basemap.addTo(mymap);
 // }});
 
 
-function conifer (feature){
-      if (feature.properties.Species == "Spruce, Blue") return 
-     feature.properties.
-  };
+// function conifer (feature){
+//       if (feature.properties.Species == "Spruce, Blue") return 
+//      feature.properties.
+//   };
 
 
 //var Conifers = L.layerGroup([geojsonLayer]);
 
 var geojsonLayer = new L.GeoJSON.AJAX("validation/result.geojson", {
     onEachFeature: function (feature, layer) {
-        return (feature.properties.Species == "Spruce, Blue"),
         layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
