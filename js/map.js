@@ -1,4 +1,4 @@
-var walnut = L.layerGroup();
+//var walnut = L.layerGroup();
 
 function PopUp(hideOrshow) {
     if (hideOrshow == 'show') document.getElementById('ac-wrapper');
@@ -6,8 +6,8 @@ function PopUp(hideOrshow) {
 }
 var mymap = L.map('mapid', {
     center: [44.6, -78.5],
-    zoom: 8,
-    layers: [walnut]   
+    zoom: 8
+    //layers: [walnut]   
 });
     
 var basemap = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
@@ -26,13 +26,13 @@ basemap.addTo(mymap);
 //     onEachFeature: function (feature, layer) {
 //         layer.bindPopup('<h1>'+feature.properties.Species+'</h1>');
 // }});
-function walnut (feature){
-    if (feature.properties.Species == "Walnut, Black") return true
-};
+// function walnut (feature){
+//     if (feature.properties.Species == "Walnut, Black") return true
+// };
 //var Conifers = L.layerGroup([geojsonLayer]);
 
 var geojsonLayer = new L.GeoJSON.AJAX("validation/result.geojson", {
-    filter: walnut,
+   // filter: walnut,
     onEachFeature: function (feature, layer) {
         layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
@@ -53,7 +53,7 @@ var overlays = {
     "Walnut": walnut
 };
 
-L.control.layers(baseLayers, overlays).addTo(mymap);
+L.control.layers(baseLayers, overlays).addTo(map);
 // var overlayMaps = {
 //     "Conifers": Conifers
 // };
