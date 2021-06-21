@@ -101,8 +101,13 @@
 <!--Map START-->
     <div id="mapid"></div>
  <!--Map END-->   
-
-
+    <script src="js/map.js"></script>
+    <script src="js/plugins.js"></script>
+    <script>
+        $(window).on("load", function() {
+            $('body').addClass('loaded');
+        });
+    </script>
     <script>
     var controlSearch = new L.Control.Search({
         position:'topright',
@@ -121,12 +126,5 @@
     
     mymap.addControl( controlSearch );
     </script>
-    <script>
-        $(window).on("load", function() {
-            $('body').addClass('loaded');
-        });
-    </script>
-        <script src="js/map.js"></script>
-        <script src="js/plugins.js"></script>
 </body>
 </html>
