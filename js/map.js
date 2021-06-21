@@ -65,7 +65,7 @@ var geojsonLayer2 = new L.GeoJSON.AJAX("validation/result.geojson", {
  				
 	//Add points and pop-ups to map			
 }});
-// geojsonLayer2.addTo(conifer);
+geojsonLayer2.addTo(conifer);
 
 // var geojsonLayer14 = new L.GeoJSON.AJAX("validation/result.geojson", {
 //     filter: function(feature) { return feature.properties.Species == "Spruce, Norway"},
