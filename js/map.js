@@ -31,16 +31,13 @@ basemap.addTo(mymap);
 // }});
 
 
- function conifer (feature){
-    return (feature.properties.Species == "Spruce, Blue");
-  };
+ 
 
 
 //var Conifers = L.layerGroup([geojsonLayer]);
 
 var geojsonLayer = new L.GeoJSON.AJAX("validation/result.geojson", {
-    dataType: "json",
-    filter: conifer,
+    filter: function(feature) { return feature.properties.Species == "Spruce, Black"},
     onEachFeature: function (feature, layer) {
         layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
@@ -53,6 +50,7 @@ var geojsonLayer = new L.GeoJSON.AJAX("validation/result.geojson", {
 	//Add points and pop-ups to map			
 }});
 geojsonLayer.addTo(conifer);
+
 
 
 
