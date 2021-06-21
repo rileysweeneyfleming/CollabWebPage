@@ -32,7 +32,7 @@ basemap.addTo(mymap);
 
 
  function conifer (feature){
-    return (feature.properties.Species)=="Spruce, Blue";
+    return (feature.properties.Species == "Spruce, Blue");
   };
 
 
