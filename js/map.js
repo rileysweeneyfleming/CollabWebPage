@@ -1,7 +1,7 @@
 var conifer = L.layerGroup();
-var trees = L.layergroup();
-var shrubs = L.layergroup();
-var other = L.layergroup();
+// var trees = L.layergroup();
+// var shrubs = L.layergroup();
+// var other = L.layergroup();
 
 function PopUp(hideOrshow) {
     if (hideOrshow == 'show') document.getElementById('ac-wrapper');
@@ -10,7 +10,7 @@ function PopUp(hideOrshow) {
 var mymap = L.map('mapid', {
     center: [44.6, -78.5],
     zoom: 8,
-    layers: [conifer, trees, shrubs, other]   
+    layers: [conifer]//, trees, shrubs, other]   
 });
     
 var basemap = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
@@ -47,23 +47,23 @@ var geojsonLayer = new L.GeoJSON.AJAX("validation/result.geojson", {
 }});
 geojsonLayer.addTo(conifer);
 
-function trees (feature){
-    if (feature.properties.Species == "Walnut, Black") return true
-};
-//var Conifers = L.layerGroup([geojsonLayer]);
+// function trees (feature){
+//     if (feature.properties.Species == "Walnut, Black") return true
+// };
+// //var Conifers = L.layerGroup([geojsonLayer]);
 
-var geojsonLayer2 = new L.GeoJSON.AJAX("validation/result.geojson", {
- filter: trees,
-   onEachFeature: function (feature, layer) {
-       layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
-       '<br> Comments: ' + feature.properties.Comments + '<br>' + 
-       '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
-       feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
-       '<a target="_blank" href=\"plantlist.html' + '"> HERE</a>' + ' for plant info, recipes and harvesting info'); 
+// var geojsonLayer2 = new L.GeoJSON.AJAX("validation/result.geojson", {
+//  filter: trees,
+//    onEachFeature: function (feature, layer) {
+//        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+//        '<br> Comments: ' + feature.properties.Comments + '<br>' + 
+//        '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
+//        feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
+//        '<a target="_blank" href=\"plantlist.html' + '"> HERE</a>' + ' for plant info, recipes and harvesting info'); 
                 
-   //Add points and pop-ups to map			
-}});
-geojsonLayer2.addTo(trees);
+//    //Add points and pop-ups to map			
+// }});
+// geojsonLayer2.addTo(trees);
 
 
 
@@ -74,8 +74,8 @@ var baseLayers = {
 };
 
 var overlays = {
-    "Conifers": conifer,
-    "Trees": trees
+    "Conifers": conifer
+    //"Trees": trees
 };
 
 L.control.layers(baseLayers, overlays).addTo(mymap);
