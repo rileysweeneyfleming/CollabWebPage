@@ -704,7 +704,7 @@ var geojsonLayer44 = new L.GeoJSON.AJAX("validation/result.geojson", {
 geojsonLayer44.addTo(other);
 
 var geojsonLayer45 = new L.GeoJSON.AJAX("validation/result.geojson", {
-    filter: function(feature) { return feature.properties.OtherTreeName === undefined},
+    filter: function(feature) { return feature.properties.Species == "Other"},
     onEachFeature: function (feature, layer) {
         layer.bindPopup('<b><center> Species:' + feature.properties.OtherTreeName + 
         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
