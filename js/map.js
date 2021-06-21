@@ -78,22 +78,22 @@ L.controlCredits({
 
 //Search Bar START
 // Will open most recent point added with selected species name
-var controlSearch = new L.Control.Search({
-    position:'topright',
-    propertyName: 'Species',		
-    layer: geojsonLayer,
-    initial: false,
-    zoom: 12,
-    marker: false,
-    circleLocation: false
-});
+// var controlSearch = new L.Control.Search({
+//     position:'topright',
+//     propertyName: 'Species',		
+//     layer: geojsonLayer,
+//     initial: false,
+//     zoom: 12,
+//     marker: false,
+//     circleLocation: false
+// });
 
-controlSearch.on('search:locationfound', function(e) {
-if(e.layer._popup)
-    e.layer.openPopup();
-});
+// controlSearch.on('search:locationfound', function(e) {
+// if(e.layer._popup)
+//     e.layer.openPopup();
+// });
 
-mymap.addControl( controlSearch );
+// mymap.addControl( controlSearch );
 
 //Search Bar END
 
