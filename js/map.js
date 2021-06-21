@@ -19,7 +19,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 //         layer.bindPopup('<h1>'+feature.properties.Species+'</h1>');
 // }});
 function filterConifers (feature){
-    if (feature.properties.Species == "Apple, Common") return true
+    if (feature.properties.Species == "Walnut, Black") return true
 };
 
 var geojsonLayer = new L.GeoJSON.AJAX("validation/result.geojson", {
