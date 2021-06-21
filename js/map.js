@@ -67,20 +67,20 @@ var geojsonLayer2 = new L.GeoJSON.AJAX("validation/result.geojson", {
 }});
 geojsonLayer2.addTo(conifer);
 
-// var geojsonLayer14 = new L.GeoJSON.AJAX("validation/result.geojson", {
-//     filter: function(feature) { return feature.properties.Species == "Spruce, Norway"},
-//     onEachFeature: function (feature, layer) {
-//         layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
-//         '<br> Comments: ' + feature.properties.Comments + '<br>' + 
-//         '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
-//         feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
-//         '<a target="_blank" href=\"plantlist.html' + '"> HERE</a>' + ' for plant info, recipes and harvesting info');
+var geojsonLayer14 = new L.GeoJSON.AJAX("validation/result.geojson", {
+    filter: function(feature) { return feature.properties.Species == "Spruce, Norway"},
+    onEachFeature: function (feature, layer) {
+        layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        '<br> Comments: ' + feature.properties.Comments + '<br>' + 
+        '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
+        feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
+        '<a target="_blank" href=\"plantlist.html' + '"> HERE</a>' + ' for plant info, recipes and harvesting info');
        
         
  				
-// 	//Add points and pop-ups to map			
-// }});
-// geojsonLayer14.addTo(conifer);
+	//Add points and pop-ups to map			
+}});
+geojsonLayer14.addTo(conifer);
 
 // var geojsonLayer15 = new L.GeoJSON.AJAX("validation/result.geojson", {
 //     filter: function(feature) { return feature.properties.Species == "Fir, Balsam"},
