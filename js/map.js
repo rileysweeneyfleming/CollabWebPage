@@ -29,9 +29,17 @@ basemap.addTo(mymap);
 //     onEachFeature: function (feature, layer) {
 //         layer.bindPopup('<h1>'+feature.properties.Species+'</h1>');
 // }});
-function conifer (feature){
-     if (feature.properties.Species == "Spruce, Blue") return true
- };
+
+
+// function conifer (feature){
+//      if (feature.properties.Species == "Spruce, Blue") return 
+//      feature.properties.
+//  };
+function conifer(feature) {
+    return feature.properties.Species == "Spruce, Blue"
+};
+
+
 //var Conifers = L.layerGroup([geojsonLayer]);
 
 var geojsonLayer = new L.GeoJSON.AJAX("validation/result.geojson", {
@@ -46,6 +54,8 @@ var geojsonLayer = new L.GeoJSON.AJAX("validation/result.geojson", {
 	//Add points and pop-ups to map			
 }});
 geojsonLayer.addTo(conifer);
+
+
 
 // function trees (feature){
 //     if (feature.properties.Species == "Walnut, Black") return true
