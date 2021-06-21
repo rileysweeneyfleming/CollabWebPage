@@ -29,6 +29,39 @@ var geojsonLayer = new L.GeoJSON.AJAX("validation/result.geojson", {
 	//Add points and pop-ups to map			
 }});
 geojsonLayer.addTo(mymap);
+//Attempting GEOJSON filter:
+
+
+        // THIS IS NEW
+        var Conifers = L.geoJson("validation/result.geojson", {
+            filter: function(feature, layer) {
+                return feature.properties.Species == "Cattails";
+                layer.bindPopup('<b><center> Species:' + feature.properties.Species + '<br> Species Name if Other: ' + feature.properties.OtherTreeName +
+        '<br> Comments: ' + feature.properties.Comments + '<br>' + 
+        '<img src= "https://kc.humanitarianresponse.info/media/original?media_file=fruittreemap%2Fattachments%2F'+ 
+        feature.properties.Upload_or_take_a_pho_of_the_edible_plant + '"' +' style="height:200px;">' + '<br>' + 'Click' +
+        '<a target="_blank" href=\"plantlist.html' + '"> HERE</a>' + ' for plant info, recipes and harvesting info'); 
+                
+            }
+        });
+
+        var others = L.geoJson(data, {
+            filter: function(feature, layer) {
+                return feature.properties.BusType != "Cattails";
+            }
+        });
+       
+
+
+        // THIS IS NEW
+        Conifers.addTo(mymap)
+        others.addTo(mymap)
+
+
+
+
+
+
 var popup = L.popup();
 function onMapClick(e) {
     popup
