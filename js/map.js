@@ -11,17 +11,17 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     id: 'mapbox/streets-v11',
     tileSize: 512,
     zoomOffset: -1,
-    layers: [Conifers, FruitTrees, Shrubs]
+    layers: [Conifers]
 }).addTo(mymap);
 
 // var geojsonLayer = new L.GeoJSON.AJAX("validation/result.geojson", {
 //     onEachFeature: function (feature, layer) {
 //         layer.bindPopup('<h1>'+feature.properties.Species+'</h1>');
 // }});
-function filterConifers (feature){
-    if (feature.properties.Species == "Walnut, Black") return true
-};
-
+//function filterConifers (feature){
+    //if (feature.properties.Species == "Walnut, Black") return true
+//};
+var Conifers = L.layerGroup([geojsonLayer]);
 var geojsonLayer = new L.GeoJSON.AJAX("validation/result.geojson", {
     filter: filterConifers,
     onEachFeature: function (feature, layer) {
@@ -33,9 +33,9 @@ var geojsonLayer = new L.GeoJSON.AJAX("validation/result.geojson", {
  				
 	//Add points and pop-ups to map			
 }});
-//geojsonLayer.addTo(mymap);
+geojsonLayer.addTo(mymap);
 //Attempting GEOJSON filter:
-var Conifers = L.layerGroup([geojsonLayer]);
+
 var overlayMaps = {
     "Conifers": Conifers
 };
